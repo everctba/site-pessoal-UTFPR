@@ -40,7 +40,7 @@
    <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 
-<body class="conteudo  overflowHidden   ">
+<body class="conteudo  overflowHidden  ">
    <div class="wFull barra-colorida   fotoAnimadaRapida  "></div>
    <!-- <audio autoplay="autoplay" controls="controls">
       <source src="img/Tower.mp3 " type="audio/mp3" />
@@ -63,12 +63,12 @@
    <section class="centraliza flexCol">
       <h6 id="Home">Creative</h6>
       <img class=" tamanhoFotoPerfil " src="img/ever-foto.png" alt="Everson Mayer">
-      <h1 class=" nomeEver  tituloDestaqueFonte  ">Everson Mayer</h1>
-      <h1 class="nomeEver tituloDestaqueFonte "><span class="nomeEver playwriteScript  scriptColorida  s">Creative</span "> Coder</h1>
+      <h1 class=" praBaixoTitulo  tituloDestaqueFonte  ">Everson Mayer</h1>
+      <h1 class="  tituloDestaqueFonte "><span class="nomeEver playwriteScript  scriptColorida  s">Creative</span "> Coder</h1>
    </section>
 
    <!--Designer Gráfico-->
-   <section class=" centraliza ">
+   <section class=" centraliza paddingSections ">
          <div class=" paiVideoBG">
          <div class="degradeVideo"></div>
          <video autoplay loop muted playsinline class=" background-clip">
@@ -91,10 +91,15 @@
          </p>
 
    </section>
-   <div class="wFull  degradeLogos ">
-      <div class="carroselLogosBG fotoAnimada  ">
+
+   <div class=" positionRelative  ">
+      <div class=" wFull carroselLogosBG fotoAnimada  "> </div>
+      <div class=" wFull positionAbsolute  degradeLogos opacity10">
+         <div class=" bordaLeve positionAbsolute ">"></div>
       </div>
-      <!-- <img class="wFull  "src="img/icones/logos-design.png" alt="carrossel-logos"> -->
+   </div>
+
+   <!-- <img class="wFull  "src="img/icones/logos-design.png" alt="carrossel-logos"> -->
 
    </div>
 
@@ -128,8 +133,8 @@
          <!-- Cards -->
          <div class="grid3 positionRelative ">
             <!-- Cards 1 -->
-            <div class="fundoCinzaCard1 ">
-               <img class="imageCardsDribble " src="img/bahance/case1.webp" alt="capa case 1">
+            <div class="fundoCinzaCard1 noiseDJ  ">
+               <img class="imageCardsDribble fadeMask" src="img/bahance/case1.webp" alt="capa case 1">
                <p class="fonteCascadiaCode300 fonteCardBehance">Durante o projeto, implementei diversos efeitos visuais
                   e animações, explorando técnicas avançadas de
                   <span>CSS</span> com variáveis para animar ângulos. Também descobri o uso de imagens animadas no
@@ -256,8 +261,8 @@
          <img class=" miniFoto  " src="img/fotos/08-foto.jpg" alt="ononon" title="petit pavet :)">
       </div>
       <div class="flex justifyCenter ">
-         <a class=" botaoAdobeStock   " href="https://stock.adobe.com/br/contributor/207291865/Everson" target="_blank"
-            rel="noopener noreferrer">
+         <a class=" botaoAdobeStock interFont  " href="https://stock.adobe.com/br/contributor/207291865/Everson"
+            target="_blank" rel="noopener noreferrer">
             Meu Adobe Stock</a>
       </div>
    </section>
@@ -347,37 +352,46 @@
          </div>
          <h3 class="textoBranco nomeEver">Dj Sets
          </h3>
-         <div>
-            <!-- video youtube -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/syPRHStwR3E?si=pExEtV1AIb43tnDZ"
-               title="YouTube video player" frameborder="0"
-               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-         </div>
-         <!-- Mix CLoud player -->
-         <div>
-            <div>
-               <iframe width=" 100%" height="120"
-                  src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Feverson-mayer%2Fdj-set-sunday-disco-everson-mayer%2F"
-                  frameborder="0"
-                  allow="encrypted-media; fullscreen; autoplay; idle-detection; speaker-selection; web-share;">
-               </iframe>
+         <div class="flex flexCol alignCenter ">
+            <div class="flex flexCol alignCenter  boxBGDj ">
+               <div class="marginBotton16  ">
+                  <!-- video youtube -->
+                  <iframe class=" videoSize " width="560" height="315"
+                     src="https://www.youtube.com/embed/syPRHStwR3E?si=pExEtV1AIb43tnDZ" title="YouTube video player"
+                     frameborder="0"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                  </iframe>
+               </div>
+               <!-- Mix CLoud player -->
+               <div class="musicPlayerGrid ">
+                  <div>
+                     <iframe width=" 100%" height="120"
+                        src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Feverson-mayer%2Fdj-set-sunday-disco-everson-mayer%2F"
+                        frameborder="0"
+                        allow="encrypted-media; fullscreen; autoplay; idle-detection; speaker-selection; web-share;">
+                     </iframe>
+                  </div>
+                  <div>
+                     <iframe width="100%" height="120"
+                        src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Feverson-mayer%2Fthis-is-my-house-01-everson-mayer%2F"
+                        frameborder="0"
+                        allow="encrypted-media; fullscreen; autoplay; idle-detection; speaker-selection; web-share;">
+                     </iframe>
+                  </div>
+                  <div>
+                     <iframe width="100%" height="120"
+                        src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Feverson-mayer%2Fprimeiro-set-everson-mayer-nu-disco%2F"
+                        frameborder="0"
+                        allow="encrypted-media; fullscreen; autoplay; idle-detection; speaker-selection; web-share;">
+                     </iframe>
+                  </div>
+               </div>
+
+               <div class="bgDegradeDJ "></div>
+
             </div>
-            <div>
-               <iframe width="100%" height="120"
-                  src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Feverson-mayer%2Fthis-is-my-house-01-everson-mayer%2F"
-                  frameborder="0"
-                  allow="encrypted-media; fullscreen; autoplay; idle-detection; speaker-selection; web-share;">
-               </iframe>
-            </div>
-            <div>
-               <iframe width="100%" height="120"
-                  src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Feverson-mayer%2Fprimeiro-set-everson-mayer-nu-disco%2F"
-                  frameborder="0"
-                  allow="encrypted-media; fullscreen; autoplay; idle-detection; speaker-selection; web-share;">
-               </iframe>
-            </div>
+
          </div>
       </div>
    </section>
@@ -392,14 +406,15 @@
       <div>
          <h3 class="textoBranco  " id="Contato">Contato</h3>
          <div class="flex flexRow  alignCenter boxDeFundoContato ">
-            <div class=" botaoWhatsApp  alignCenter  flex flexRow ">
-               <img class="iconeWhatsTamanho  " src="img/whats-icon.png" alt="icone Whatsapp">
-               <a class=" naoQuerbraLinhaWhats " href="https://wa.me/554191380967?text=Olá%2C%20vim%20pelo%20seu%20website
-               " target="_blank">Meu WhatsApp</a>
+            <div class="centerIconWhats ">
+               <img class="marginIconeInsta  " src="img/whats-icon.png" alt="icone Whatsapp">
+               <a class=" botaoWhatsApp  naoQuerbraLinhaWhats "
+                  href="https://wa.me/554191380967?text=Olá%2C%20vim%20pelo%20seu%20website" target="_blank">Meu
+                  WhatsApp</a>
             </div>
-            <div></div>>
+            <div></div>
             <img class=" tamanhoNokia  " src="img/nokia-fone-1.png" alt="telefone contato retro">
-            <div class="flex flexCol  alignCenter justifyCenter "> ">
+            <div class="flex flexCol  alignCenter justifyCenter positionInsta ">
                <img class=" marginIconeInsta " src="img/insta-icon.png" alt="icone Instagram">
                <a class="botaoInsta  naoQuerbraLinhaWhats " href="https://www.instagram.com/everson_mayer/"
                   target="_blank">Meu
@@ -412,20 +427,24 @@
    </section>
 
    <section>
-      <h2 class="textoBranco   ">Natural de Missal-PR | Residindo em Toledo-PR</h2>
+      <h2
+         class=" textoBranco   paddingBottom12  fontBoldINTER interFont tituloInterDegrade  flex  alignCenter justifyCenter ">
+         Natural de
+         Missal-PR | Residindo em Toledo-PR</h2>
       <iframe class="mapaMissal   "
          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7226.503331078811!2d-54.2498694!3d-25.0933409!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f4055bd440012f%3A0x5553e18d4f42e9d4!2sMissal%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1757195428057!5m2!1spt-BR!2sbr"
          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
    </section>
 
-   <footer>
+   <footer class=" paddingSections ">
       <!-- Rodape -->
-      <p>Desenvolvido por Everson Mayer ©2025 | Contato: everson777@gmail.com</p>
-      <div></div>
-      <div>
-         <img src="img/UTFPR-logo.png" alt="Logo branca UTFPR">
-         <p>
+      <p class="flex opacity70 interFont justifyCenter ">Desenvolvido por Everson Mayer ©2025 | Contato:
+         everson777@gmail.com</p>
+      <div class="linhaBordaDiv  "></div>
+      <div class=" flex flexRol alignCenter  ">
+         <img class="tamanhoLogoUTFPR" src="img/UTFPR-logo.png" alt="Logo branca UTFPR">
+         <p class=" interFont paddingBottom32 ">
             Projeto desenvolvido na matéria de DESENVOLVIMENTO WEB FRONT-END 1
             sobre diretivas do professor Eduardo Pezutti parao curso superior de Tecnologia em Sistemas para Internet
             (TSI) do campus Toledo.

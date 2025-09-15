@@ -191,7 +191,7 @@ h3 {
 .tituloDestaqueFonte {
 	font-family: "abcFavoritMono";
 	line-height: 1.2;
-	font-size: 122px !important;
+	font-size: 150px !important;
 	letter-spacing: -11px;
 
 	background-image: radial-gradient(60% 58% at 47% 61%, #ffffff 61%, #f5f5f51f 100%);
@@ -203,10 +203,11 @@ h3 {
 }
 
 .scriptColorida {
-	font-size: 122px !important;
+	position: relative;
+	right: -28px;
+	top: -8px;
+	font-size: 126px !important;
 	background-image: radial-gradient(60% 58% at 47% 61%, #00fff3 30%, #2dfffbb5 100%);
-	/* radial-gradient(6% 4% at 17% 10%, #06ffc1 30%, #07F6F2 100%) */
-	/* radial-gradient(68% 78% at 30% 84%, #06FFC1, #07F6F2 100%) */
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -419,7 +420,7 @@ p {
 	background-repeat: repeat-x;
 	background-image: url("img/icones/logos-design.png");
 	/* background-color: #e8ff554a; */
-	height: 70px;
+	height: 84px;
 	background-size: cover;
 
 	/* background-image: url(); */
@@ -433,6 +434,12 @@ p {
 	background-position-x: 400px;
 
 	/* background-repeat: repeat-x; */
+}
+
+.praBaixoTitulo {
+	white-space: nowrap;
+	top: 43px;
+	position: relative;
 }
 
 .fotoAnimada {
@@ -637,12 +644,31 @@ p {
 }
 
 .degradeLogos {
+
 	margin-top: 22px;
 	margin-bottom: 32px;
-	height: 100px;
+	height: 180px;
+	width: 100vw;
+	/* background-color: #0AFF61; */
+	background-image: linear-gradient(90deg, #d9d9d900 0%, #d9d9d942 25%, #d9d9d93e 75%, #d9d9d900 100%);
 
-	background-color: #0AFF61;
-	backgroun-image: linear-gradient(90deg, #d9d9d900 0%, #D9D9D9 25%, #D9D9D9 75%, #d9d9d900 100%);
+
+}
+
+.opacity10 {
+	opacity: 0.2;
+	top: -74px;
+}
+
+.bordaLeve {
+	/* position: absolute; */
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(155deg, #ffffff00 22%, #ffffffed 50%, #ffffff00 80%) border-box;
+	border: 1px solid;
+	border-image-source: linear-gradient(#33683b, #0c2219, #33683b);
+	-webkit-mask: conic-gradient(#fff 0 0) padding-box, linear-gradient(#ff0a0a 0 0);
+	-webkit-mask-composite: destination-out;
 }
 
 section {
@@ -889,11 +915,78 @@ section {
 
 .tamanhoNokia {
 	width: 70%;
+	background-image: url("img/degrade-celular.png");
+	background-size: cover;
+	background-size: 109%;
+	background-position-x: center;
+	background-position-y: center;
+}
+
+/* 
++++++++++++++++++++++++++++++++++++++++++++ */
+@property --angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+
+
+@keyframes rotate {
+	from {
+		--angle: 0deg;
+	}
+
+	to {
+		--angle: 360deg;
+	}
+}
+
+.bgDegradeDJ {
+	--angle: 0deg;
+	animation: rotate 4.5s linear infinite !important;
+	animation-play-state: running;
+	position: absolute;
+	z-index: -1;
+	filter: blur(71px);
+	opacity: 0.6;
+	height: 735px;
+	width: 533px;
+	background-image: linear-gradient(var(--angle), #a900fabf 0%, #24c4ff 44%, #00ff49 100%);
+}
+
+
+.noiseDJ {
+	/* position: absolute; */
+	/* z-index: 0; */
+	/* filter: blur(71px); */
+	opacity: 0.799;
+	/* height: 735px; */
+	/* width: 533px; */
+	background-image: url("img/ruido-animado.gif");
+	background-blend-mode: color-dodge;
+	background-size: 119px;
+}
+
+.fadeMask {
+	mask: linear-gradient(to bottom, black 70%, transparent);
+
+}
+
+.botaoAdobeStock {
+	margin-top: 22px;
+	background-color: #404040;
+	border-radius: 12px;
+	padding-left: 22px;
+	padding: 14px;
+	font-weight: 700;
+	line-height: 1;
+	padding-left: 22px;
+	padding-right: 22px;
 }
 
 .botaoWhatsApp {
 
-	width: 20%;
+	/* width: 20%; */
 	padding-bottom: 8px;
 	padding-top: 8px;
 	padding-right: 22px;
@@ -903,6 +996,65 @@ section {
 	gap: 16px;
 }
 
+.videoSize {
+
+	width: 100%;
+	max-width: 560px;
+	aspect-ratio: 16/9;
+	border-radius: 16px;
+}
+
+.boxBGDj {
+
+	padding: 16px;
+	width: 560px;
+	background-color: #1A1D24;
+	border-radius: 37px;
+	border-color: #6dffe442;
+	border-style: solid;
+	border-width: 1px;
+
+}
+
+.marginBotton16 {
+	margin-bottom: 16px;
+}
+
+.musicPlayerGrid {
+	width: 100%;
+}
+
+.positionInsta {
+
+	position: relative;
+	left: -64px;
+}
+
+.centerIconWhats {
+	left: 64px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.opacity70 {
+	opacity: 0.7;
+
+}
+
+.tamanhoLogoUTFPR {
+	width: 264px;
+	padding-right: 32px;
+}
+
+.linhaBordaDiv {
+	border-top: 1px solid #65656536;
+	margin-top: 32px;
+	margin-bottom: 66px;
+}
 
 .boxDeFundoContato {
 	padding: 60px;
