@@ -313,7 +313,7 @@ a {
 
 .imageCardsDribble {
 
-	width: 250px;
+	width: 230px;
 	border-radius: 24px;
 	margin-bottom: 22px;
 }
@@ -831,6 +831,15 @@ section {
 	width: 24px;
 }
 
+.iconeSpotifyBotaoB {
+
+	width: 62px;
+	width: 62px;
+	margin-left: -6px;
+	top: 4px;
+	position: relative;
+}
+
 .tituloInterDegrade {
 
 	font-size: 40px;
@@ -997,6 +1006,7 @@ section {
 	background-color: #37C956;
 	border-radius: 16px;
 	gap: 16px;
+	color: white !important;
 }
 
 .videoSize {
@@ -1026,6 +1036,8 @@ section {
 .musicPlayerGrid {
 	width: 100%;
 }
+
+#Music {}
 
 .positionInsta {
 
@@ -1083,6 +1095,7 @@ section {
 	padding-left: 22px;
 	background-image: linear-gradient(90deg, #FF6B18 0%, #C8125E 50%, #784C9D 100%);
 	border-radius: 16px;
+	color: white;
 
 }
 
@@ -1110,7 +1123,62 @@ section {
 
 .coladoNoCantoBehance {
 	position: absolute;
-	right: x;
-	left: -136px;
+	right: 0px;
+	/* left: -136px; */
 
+}
+
+.dribbbleButton {
+
+	display: flex;
+	align-content: center;
+	align-items: center;
+	padding: 6px 36px;
+	background-color: rgb(234 76 137);
+	transform: scale(1);
+	gap: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	transition: all 0.2s ease-out;
+	border-radius: 8px;
+	color: white !important;
+}
+
+.dribbbleButtonIconeSize {
+
+	width: 32px;
+	aspect-ratio: 1/1;
+}
+
+.Porcento80 {
+
+	width: 58%;
+}
+
+.wCardsDribbble {
+	width: 100%;
+	justify-content: space-between;
+}
+
+.porcentoWidth100 {
+
+	width: 100%;
+
+}
+
+.destaqueVerdeFont {
+
+	color: #00F7C1;
+}
+
+.tituloTrack {
+	margin-top: 6px;
+	font-size: 20px;
+	color: #fafafa;
+}
+
+.subTituloTrack {
+	padding-top: 4px;
+	font-size: 12px;
+	color: #cedde5dc;
 }
