@@ -318,6 +318,13 @@ a {
 	margin-bottom: 22px;
 }
 
+.imageCardsBehance {
+
+	width: 100%;
+	border-radius: 24px;
+	margin-bottom: 22px;
+}
+
 .tamanhoHandIcon {
 
 	width: 30px;
@@ -1005,7 +1012,7 @@ section {
 
 
 .divNoise {
-	opacity: 0.899;
+	opacity: 0.799;
 	mix-blend-mode: color-dodge;
 	position: absolute;
 	width: 100%;
@@ -1179,6 +1186,12 @@ section {
 	gap: 12px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 700;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 8px;
+	height: 34px;
 	transition: all 0.2s ease-out;
 	border-radius: 8px;
 	color: white !important;
@@ -1237,7 +1250,41 @@ section {
 	opacity: 0.7;
 }
 
-.padding-content-card-behance {
+.blur-tamanho-titulo-dribbble {
+	position: absolute;
+	width: 300px;
+	filter: blur(52px);
+	pointer-events: none;
+	top: 58px;
+	left: -22px;
+	opacity: 0.7;
+}
 
-	padding: 8px 16px;
+.blur-tamanho-titulo-3 {
+	position: absolute;
+	width: 300px;
+	filter: blur(23px);
+	pointer-events: none;
+	top: 40px;
+	left: -59px;
+	opacity: 0.237;
+}
+
+.padding-content-card-behance {
+	padding: 16px 16px;
+	padding-top: 0px;
+}
+
+.size-card-behance {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+
+}
+
+.relative {
+
+	position: relative;
 }
