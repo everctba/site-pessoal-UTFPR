@@ -1,0 +1,37 @@
+digraph BDIAgent {
+   rankdir = LR;
+   size = "12,8";
+   
+   // Estados principais
+   node [shape = ellipse; style = filled; fillcolor = lightgrey;];
+   Start;
+   AtualizarCrenças;
+   DeliberarDesejo;
+   IntençãoRest;
+   IntençãoFight;
+   IntençãoExplore;
+   PlanoRest;
+   PlanoFight;
+   PlanoExplore;
+   Loop;
+   
+   // Fluxo
+   Start -> AtualizarCrenças [label = "inicializar energia=50, inimigo=false";];
+   AtualizarCrenças -> DeliberarDesejo [label = "avaliar energia e inimigo";];
+   
+   // Decisões de intenção
+   DeliberarDesejo -> IntençãoRest [label = "energia < 30";];
+   DeliberarDesejo -> IntençãoFight [label = "enemy_near=true";];
+   DeliberarDesejo -> IntençãoExplore [label = "senão";];
+   
+   // Execução dos planos
+   IntençãoRest -> PlanoRest [label = "executa rest_plan";];
+   IntençãoFight -> PlanoFight [label = "executa fight_plan";];
+   IntençãoExplore -> PlanoExplore [label = "executa explore_plan";];
+   
+   // Retorno ao loop
+   PlanoRest -> Loop;
+   PlanoFight -> Loop;
+   PlanoExplore -> Loop;
+   Loop -> AtualizarCrenças [label = "sleep 2s, repetir";];
+}
