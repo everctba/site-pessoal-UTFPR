@@ -246,7 +246,7 @@ h3 {
 	align-items: center;
 	justify-content: center;
 	background-color: #002b4363;
-	padding: 12px;
+	padding: 16px 40px;
 	border-radius: 122px;
 	margin-top: 6px;
 	width: 100%;
@@ -280,12 +280,12 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-	color: hotpink;
+	color: rgb(0, 171, 166);
 }
 
 /* selected link */
 a:active {
-	color: blue;
+	color: rgb(96, 255, 255);
 }
 
 a {
@@ -842,15 +842,50 @@ section {
 }
 
 .botaoSpotify {
-	background-color: #1DB954;
+	/* background-color: #1DB954;
 	border-radius: 16px;
-	padding: 12px;
+	padding: 12px 24px;
 	gap: 12px;
 	width: fit-content;
 	margin-top: 32px;
 	margin-left: auto;
 	margin-right: auto;
 	text-decoration: none;
+	font-weight: 700;
+	color: rgb(255, 255, 255) !important;
+	transition: all 0.15s ease; */
+
+}
+
+.botaoSpotify:active {
+	transform: scale(0.95);
+}
+
+.linkaaaa {
+	gap: 12px;
+	display: flex;
+	color: white !important;
+	align-content: center;
+	align-items: center;
+	transition: all 0.3s ease;
+	transform: scale(1.0);
+	background-color: #1DB954;
+	border-radius: 16px;
+	padding: 12px 24px;
+	gap: 12px;
+	width: fit-content;
+	margin-top: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+	font-weight: 700;
+	color: rgb(255, 255, 255) !important;
+	transition: all 0.15s ease;
+}
+
+.linkaaaa:hover {
+
+	transform: scale(1.05);
 }
 
 .iconeSpotifyBotao {
