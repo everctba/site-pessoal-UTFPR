@@ -631,13 +631,8 @@ p {
 	justify-content: center;
 }
 
-.botaoAdobeStock {
 
-	padding: 4px;
-	background-color: aqua;
-	padding-left: 14px;
-	padding-right: 14px;
-}
+
 
 .imagemFundoLogos {
 
@@ -1066,6 +1061,10 @@ section {
 }
 
 .botaoAdobeStock {
+	padding: 4px;
+	background-color: aqua;
+	padding-left: 14px;
+	padding-right: 14px;
 	margin-top: 22px;
 	background-color: #404040;
 	border-radius: 12px;
@@ -1075,19 +1074,100 @@ section {
 	line-height: 1;
 	padding-left: 22px;
 	padding-right: 22px;
+	transition: all 0.1s ease;
+	transform: scale(1);
 }
 
-.botaoWhatsApp {
+.botaoAdobeStock:hover {
 
-	/* width: 20%; */
-	padding-bottom: 8px;
-	padding-top: 8px;
-	padding-right: 22px;
+	padding: 4px;
+	background-color: aqua;
+	padding-left: 14px;
+	padding-right: 14px;
+	margin-top: 22px;
+
+	border-radius: 12px;
 	padding-left: 22px;
+	padding: 14px;
+	font-weight: 700;
+	line-height: 1;
+	padding-left: 22px;
+	padding-right: 22px;
+	transition: all 0.2s ease;
+	transform: scale(1.05);
+}
+
+.botaoAdobeStock:active {
+
+	padding: 4px;
+	background-color: aqua;
+	padding-left: 14px;
+	padding-right: 14px;
+	margin-top: 22px;
+	background-color: #017269;
+	border-radius: 12px;
+	padding-left: 22px;
+	padding: 14px;
+	font-weight: 700;
+	line-height: 1;
+	padding-left: 22px;
+	padding-right: 22px;
+	transition: all 0.2s ease;
+	transform: scale(0.95);
+}
+
+
+.botaoWhatsApp {
+	border-width: 0.7px;
+	border-style: solid;
+	border-color: #ffffff4f;
+
+	background-position: center;
+	background-size: 110%;
+	/* width: 20%; */
+	padding-bottom: 12px;
+	padding-top: 12px;
+	padding-right: 26px;
+	padding-left: 26px;
 	background-color: #37C956;
 	border-radius: 16px;
 	gap: 16px;
 	color: white !important;
+	font-size: 18px;
+	transition: all 0.1s ease;
+	transform: scale(1);
+}
+
+.botaoWhatsApp:hover {
+
+	/* width: 20%; */
+	padding-bottom: 12px;
+	padding-top: 12px;
+	padding-right: 26px;
+	padding-left: 26px;
+	background-color: #41ff6a;
+	border-radius: 16px;
+	gap: 16px;
+	color: white !important;
+	font-size: 18px;
+	transition: all 0.2s ease;
+	transform: scale(1.05);
+}
+
+.botaoWhatsApp:active {
+
+	/* width: 20%; */
+	padding-bottom: 12px;
+	padding-top: 12px;
+	padding-right: 26px;
+	padding-left: 26px;
+	background-color: #14a934;
+	border-radius: 16px;
+	gap: 16px;
+	color: white !important;
+	font-size: 18px;
+	transition: all 0.1s ease;
+	transform: scale(0.95);
 }
 
 .videoSize {
@@ -1170,13 +1250,34 @@ section {
 .botaoInsta {
 	/* position: absolute; */
 	/* width: 20%; */
-	padding-bottom: 8px;
-	padding-top: 8px;
-	padding-right: 22px;
-	padding-left: 22px;
+	padding-bottom: 12px;
+	padding-top: 12px;
+	padding-right: 26px;
+	padding-left: 26px;
 	background-image: linear-gradient(90deg, #FF6B18 0%, #C8125E 50%, #784C9D 100%);
 	border-radius: 16px;
-	color: white;
+	color: white !important;
+	border-width: 0.7px;
+	border-style: solid;
+	border-color: #ffffff21;
+	font-size: 18px;
+	transition: all 0.1s ease;
+	transform: scale(1);
+	background-position: center;
+	background-size: 110%;
+}
+
+.botaoInsta:hover {
+	filter: brightness(1.2);
+	transition: all 0.1s ease;
+	transform: scale(1.05);
+
+}
+
+.botaoInsta:active {
+	filter: brightness(0.7);
+	transition: all 0.1s ease;
+	transform: scale(0.95);
 
 }
 
