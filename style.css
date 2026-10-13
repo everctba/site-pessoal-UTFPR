@@ -1633,6 +1633,7 @@ section {
 	/* Dribbble cards — 2 por linha */
 	.imageCardsDribble {
 		width: calc(50% - 8px);
+		margin-bottom: 0;
 	}
 
 	/* Sections padding */
@@ -1768,8 +1769,8 @@ section {
 
 	/* Container */
 	.conteudo {
-		padding-left: 12px;
-		padding-right: 12px;
+		padding-left: 16px;
+		padding-right: 16px;
 	}
 
 	/* Menu — compacto */
@@ -1799,7 +1800,7 @@ section {
 	}
 
 	.nomeEver {
-		font-size: 32px;
+		font-size: 48px;
 	}
 
 	.tituloSection {
@@ -1808,12 +1809,12 @@ section {
 
 	/* Grids — tudo 1 coluna */
 	.grid2,
-	.grid3,
-	.grid6 {
+	.grid3 {
 		grid-template-columns: 1fr;
 	}
 
 	.grid4,
+	.grid6,
 	.gridHobbies {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -1825,6 +1826,7 @@ section {
 
 	.imageCardsDribble {
 		width: 100%;
+		margin-bottom: 0;
 	}
 
 	/* Foto perfil */
@@ -1836,6 +1838,8 @@ section {
 	.paddingSections {
 		padding-top: 40px;
 		padding-bottom: 40px;
+		/* padding-left: 16px;
+		padding-right: 16px; */
 	}
 
 	.padding-extra {
@@ -1888,7 +1892,7 @@ section {
 
 	/* Box Eps e Singles */
 	.boxEpsESingles {
-		padding: 12px;
+		padding: 20px;
 		border-radius: 20px;
 	}
 
@@ -1925,17 +1929,18 @@ section {
 	/* Título interdegrade */
 	.tituloInterDegrade {
 		font-size: 22px;
+		text-align: center;
 	}
 
 	/* Carrossel logos */
 	.carroselLogosBG {
-		height: 40px;
+		height: 76px;
 	}
 
 	/* Degradê logos */
 	.degradeLogos {
-		height: 80px;
-		margin-top: 12px;
+		height: 146px;
+		margin-top: 40px;
 		margin-bottom: 16px;
 	}
 
@@ -1945,6 +1950,8 @@ section {
 		height: auto;
 		padding: 8px 14px;
 		font-size: 13px;
+		justify-content: center;
+
 	}
 
 	.linkaaaa {
