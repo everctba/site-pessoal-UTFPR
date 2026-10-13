@@ -277,6 +277,64 @@ h3 {
 	border-color: #67b59b0d;
 }
 
+/* ---------- Menu hambúrguer ---------- */
+.navWrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 55;
+	pointer-events: none;
+}
+
+.navWrapper>* {
+	pointer-events: auto;
+}
+
+.hamburger {
+	display: none;
+	position: fixed;
+	top: 14px;
+	right: 16px;
+	width: 46px;
+	height: 46px;
+	padding: 0;
+	border: 1px solid #67b59b0d;
+	border-radius: 14px;
+	background-color: #002b4363;
+	background-image: linear-gradient(164deg, #020e0f7d, #020e0f70);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	box-shadow: 6px 6px 43px rgb(0 29 35 / 60%);
+	cursor: pointer;
+	z-index: 56;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+}
+
+.hamburger span {
+	display: block;
+	width: 22px;
+	height: 2px;
+	background-color: #05FEC0;
+	border-radius: 2px;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.isOpen span:nth-child(1) {
+	transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.isOpen span:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger.isOpen span:nth-child(3) {
+	transform: translateY(-7px) rotate(-45deg);
+}
+
 
 .textoBranco {
 	color: aliceblue;
@@ -1579,15 +1637,46 @@ section {
 		padding-right: 16px;
 	}
 
-	/* Menu — scroll horizontal */
+	/* Menu — hambúrguer */
+	.hamburger {
+		display: flex;
+	}
+
 	.menuStyle {
-		max-width: calc(100% - 16px);
-		padding: 10px 16px;
-		gap: 10px;
-		font-size: 13px;
-		overflow-x: auto;
-		-webkit-overflow-scrolling: touch;
+		position: fixed;
+		top: 70px;
+		right: 16px;
+		left: 16px;
+		transform: none;
+		max-width: none;
+		width: auto;
+		padding: 20px 24px;
+		gap: 18px;
+		font-size: 16px;
+		border-radius: 22px;
+		flex-direction: column;
+		align-items: flex-start;
 		justify-content: flex-start;
+		overflow: hidden;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-12px);
+		transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+	}
+
+	.menuStyle.menuAberto {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+
+	.menuStyle li {
+		width: 100%;
+	}
+
+	.menuStyle li a {
+		display: block;
+		padding: 6px 0;
 	}
 
 	/* Títulos Hero */
@@ -1786,15 +1875,17 @@ section {
 		padding-right: 16px;
 	}
 
-	/* Menu — compacto */
+	/* Menu — hambúrguer compacto */
 	.menuStyle {
-		padding: 30px 0px;
-		gap: 32px;
-		font-size: 12px;
-		border-radius: 16px;
-		margin-top: 4px;
+		top: 66px;
+		right: 12px;
+		left: 12px;
+		padding: 18px 20px;
+		gap: 14px;
+		font-size: 15px;
+		border-radius: 18px;
 		flex-direction: column;
-		position: relative;
+		position: fixed;
 	}
 
 	/* Títulos Hero */

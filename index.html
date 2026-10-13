@@ -47,8 +47,14 @@
       seu navegador não suporta HTML5
    </audio> -->
    <!-- Menu -->
-   <nav class=" ">
-      <ul class=" flex flexRow menuStyle fonteCascadiaCode ">
+   <nav class="navWrapper ">
+      <button class="hamburger " id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false"
+         aria-controls="menuLista">
+         <span></span>
+         <span></span>
+         <span></span>
+      </button>
+      <ul id="menuLista" class=" flex flexRow menuStyle fonteCascadiaCode ">
          <li><a href="#Home">Início</a></li>
          <li><a href="#Behance">Behance</a></li>
          <li><a href="#Dribbble">Dribbble</a></li>
@@ -475,6 +481,37 @@
 
    </footer>
 
+   <script>
+      (function () {
+         var hamburger = document.getElementById('hamburgerBtn');
+         var menuLista = document.getElementById('menuLista');
+         if (!hamburger || !menuLista) return;
+
+         function toggleMenu(force) {
+            var isOpen = typeof force === 'boolean' ? force : !menuLista.classList.contains('menuAberto');
+            menuLista.classList.toggle('menuAberto', isOpen);
+            hamburger.classList.toggle('isOpen', isOpen);
+            hamburger.setAttribute('aria-expanded', String(isOpen));
+            hamburger.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+         }
+
+         hamburger.addEventListener('click', function () { toggleMenu(); });
+
+         menuLista.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () { toggleMenu(false); });
+         });
+
+         document.addEventListener('click', function (e) {
+            if (!menuLista.classList.contains('menuAberto')) return;
+            if (menuLista.contains(e.target) || hamburger.contains(e.target)) return;
+            toggleMenu(false);
+         });
+
+         document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') toggleMenu(false);
+         });
+      })();
+   </script>
 
 </body>
 
