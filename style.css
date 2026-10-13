@@ -238,6 +238,14 @@ h3 {
 	background-color: brown;
 }
 
+#Home {
+	top: -26px;
+	font-family: 'HumbleNostalgia';
+	color: #bbbbbb08;
+	font-size: 500px;
+	position: absolute;
+}
+
 .menuStyle {
 	font-size: medium;
 	display: flex;
@@ -262,6 +270,9 @@ h3 {
 	left: 50%;
 	transform: translateX(-50%);
 	max-width: 1040px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #67b59b0d;
 }
 
 
@@ -270,7 +281,8 @@ h3 {
 }
 
 a:link {
-	color: rgb(119, 223, 255);
+	color: #05FEC0;
+	transition: all 0.43s ease;
 }
 
 /* visited link */
@@ -280,7 +292,9 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-	color: rgb(0, 171, 166);
+	transition: width 2s;
+	text-shadow: #00ffe5 1px 6px 19px;
+	color: rgb(215, 255, 248);
 }
 
 /* selected link */
@@ -572,7 +586,7 @@ p {
 }
 
 .botaoBehance {
-	color: #ffffff !improtant;
+	color: #ffffff !important;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 700;
 	display: flex;
@@ -737,7 +751,7 @@ section {
 	background-size: cover;
 
 	/* background-position-x: 400px; */
-	height: 4px;
+	height: 1px;
 	/* width: 100%; */
 	/* margin-bottom: -12px; */
 	background-size: auto;
@@ -876,10 +890,13 @@ section {
 	font-weight: 700;
 	color: rgb(255, 255, 255) !important;
 	transition: all 0.15s ease;
+
 }
 
 .linkaaaa:hover {
-
+	box-shadow: 0px 4px 32px 2px rgba(43, 255, 114, 0.349);
+	transform: scale(1.04);
+	transition: all 0.03s ease;
 	transform: scale(1.05);
 }
 
@@ -1066,7 +1083,7 @@ section {
 	padding-left: 14px;
 	padding-right: 14px;
 	margin-top: 22px;
-	background-color: #404040;
+	background-color: #0d3c3e;
 	border-radius: 12px;
 	padding-left: 22px;
 	padding: 14px;
@@ -1085,7 +1102,7 @@ section {
 	padding-left: 14px;
 	padding-right: 14px;
 	margin-top: 22px;
-
+	color: darkslategray;
 	border-radius: 12px;
 	padding-left: 22px;
 	padding: 14px;
@@ -1095,7 +1112,12 @@ section {
 	padding-right: 22px;
 	transition: all 0.2s ease;
 	transform: scale(1.05);
+
+	box-shadow: 0px 4px 32px 2px rgba(31, 255, 236, 0.315);
+	transform: scale(1.04);
+	transition: all 0.03s ease;
 }
+
 
 .botaoAdobeStock:active {
 
