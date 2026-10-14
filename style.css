@@ -380,7 +380,7 @@ a {
 	justify-content: center;
 }
 
-.heroFotoWrapper .bgDegradeDJ {
+.heroFotoWrapper .bgDegradeDJ-foto {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
@@ -390,6 +390,47 @@ a {
 .heroFotoWrapper .tamanhoFotoPerfil {
 	position: relative;
 	z-index: 1;
+}
+
+@keyframes heroPulseExpand {
+	0% {
+		transform: translate(-50%, -50%) scale(0.4);
+		opacity: 0.65;
+	}
+
+	70% {
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(-50%, -50%) scale(1.9);
+		opacity: 0;
+	}
+}
+
+.heroPulse {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	border: 2px solid rgba(5, 254, 192, 0.55);
+	pointer-events: none;
+	z-index: 0;
+	animation: heroPulseExpand 6.4s ease-out infinite both;
+}
+
+.heroPulse--2 {
+	animation-delay: 1.6s;
+}
+
+.heroPulse--3 {
+	animation-delay: 3.2s;
+}
+
+.heroPulse--4 {
+	animation-delay: 4.8s;
 }
 
 .nomeEver {
