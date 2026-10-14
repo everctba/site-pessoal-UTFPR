@@ -1457,6 +1457,7 @@ section {
 	position: absolute;
 	right: 0px;
 	top: -100px;
+	opacity: 0.5;
 }
 
 .paddingSections {
