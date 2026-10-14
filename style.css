@@ -108,6 +108,13 @@ section {
 
 body {
 	line-height: 1;
+	cursor: url('img/mouse-pointer-hand.png') 4 4, auto;
+}
+
+a,
+button,
+.hamburger {
+	cursor: url('img/mouse-pointer-hand.png') 4 4, pointer;
 }
 
 ol,
@@ -306,7 +313,7 @@ h3 {
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
 	box-shadow: 6px 6px 43px rgb(0 29 35 / 60%);
-	cursor: pointer;
+	cursor: url('img/hand.png') 4 4, pointer;
 	z-index: 56;
 	flex-direction: column;
 	align-items: center;
@@ -461,7 +468,8 @@ a {
 
 .tamanhoHandIcon {
 
-	width: 30px;
+	width: 50px;
+	height: 54px;
 }
 
 .wFull {
@@ -1967,6 +1975,9 @@ section {
 	.tituloDestaqueFonte {
 		font-size: 44px !important;
 		letter-spacing: -3px;
+		text-align: center;
+		display: flex;
+		gap: 20px;
 	}
 
 	.scriptColorida {
@@ -1982,10 +1993,13 @@ section {
 
 	.nomeEver {
 		font-size: 48px;
+		text-align: center;
 	}
 
 	.tituloSection {
 		font-size: 36px;
+		display: flex;
+		justify-content: center;
 	}
 
 	/* Grids — tudo 1 coluna */
@@ -2189,4 +2203,22 @@ section {
 	.interFont {
 		text-align: center;
 	}
+
+	.font-rodape-mobile {
+		font-size: 12px !important;
+	}
+
+	.heroPulse {
+
+		width: 120px;
+		height: 120px;
+
+	}
+
+	.tamanhoHandIcon {
+
+		width: 30px;
+		height: 32px;
+	}
+
 }
