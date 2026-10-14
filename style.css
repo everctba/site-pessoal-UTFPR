@@ -106,7 +106,7 @@ section {
 	display: block;
 }
 
-body {
+html {
 	line-height: 1;
 	cursor: url('img/mouse-pointer-hand.png') 4 4, auto;
 }
@@ -178,6 +178,8 @@ h3 {
 	font-size: 97px;
 	font-family: "HumbleNostalgia";
 	line-height: 1.2;
+	mix-blend-mode: lighten;
+	opacity: 0.9;
 }
 
 .fontTitulos {
