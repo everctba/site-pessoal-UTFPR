@@ -373,6 +373,25 @@ a {
 	z-index: 5;
 }
 
+.heroFotoWrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.heroFotoWrapper .bgDegradeDJ {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+}
+
+.heroFotoWrapper .tamanhoFotoPerfil {
+	position: relative;
+	z-index: 1;
+}
+
 .nomeEver {
 
 	font-size: 87px;
@@ -1100,6 +1119,21 @@ section {
 	background-image: linear-gradient(var(--angle), #a900fabf 0%, #24c4ff 44%, #00ff49 100%);
 }
 
+.bgDegradeDJ-foto {
+	--angle: 0deg;
+	animation: rotate 4.5s linear infinite !important;
+	animation-play-state: running;
+	position: absolute;
+	z-index: -1;
+	filter: blur(71px);
+	opacity: 0.4;
+	height: 266px;
+	width: 258px;
+	/* border-radius: 500px; */
+	mix-blend-mode: difference;
+
+	background-image: linear-gradient(var(--angle), #a900fabf 0%, #24c4ff 44%, #00ff49 100%);
+}
 
 .noiseDJ {
 	/* position: absolute; */
