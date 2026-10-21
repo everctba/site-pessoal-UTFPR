@@ -843,6 +843,31 @@ section {
 	padding-top: 60px;
 }
 
+.shapeblur-hero-1 {
+	width: 900px;
+
+	position: absolute;
+	height: 471px;
+	background-color: #5268f679;
+	background: radial-gradient(ellipse closest-side at 54% 60%, rgba(22, 255, 197, 1) 51%, rgba(77, 100, 255, 0.55) 57%);
+	/* background: radial-gradient(ellipse closest-side at 51% 60%, rgba(22, 255, 197, 1) 27%, rgba(77, 100, 255, 0.55) 57%); */
+	border-radius: 1000px;
+	filter: blur(110px);
+	pointer-events: none;
+	background-blend-mode: hue;
+	top: -81px;
+	left: -109%;
+	opacity: 0.45;
+	scale: 1.8;
+	mix-blend-mode: difference;
+	rotate: 14deg;
+}
+
+
+.section-relative {
+	position: relative;
+}
+
 .subtituloSections {
 
 	display: flex;
