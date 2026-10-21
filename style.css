@@ -252,9 +252,15 @@ h3 {
 #Home {
 	top: -26px;
 	font-family: 'HumbleNostalgia';
-	color: #bbbbbb08;
+	color: #16191d;
 	font-size: 500px;
 	position: absolute;
+	text-shadow: 2px -1px 0 #e1f7fe0f, -2px 1px 0 #a8f1b314;
+}
+
+.mover-para-cima:hover {
+	transform: translateY(-5px);
+	transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .menuStyle {
@@ -581,7 +587,7 @@ p {
 	/* height: 249px; */
 	position: relative;
 	overflow-x: clip;
-	background-size: auto;
+	background-size: 80%;
 	background-position-x: 400px;
 
 	/* background-repeat: repeat-x; */
@@ -808,7 +814,7 @@ p {
 
 	margin-top: 22px;
 	margin-bottom: 32px;
-	height: 180px;
+	height: 142px;
 	width: 100vw;
 	/* background-color: #0AFF61; */
 	background-image: linear-gradient(90deg, #d9d9d900 0%, #d9d9d942 25%, #d9d9d93e 75%, #d9d9d900 100%);
@@ -1932,6 +1938,7 @@ section {
 	/* Carrossel de logos */
 	.carroselLogosBG {
 		height: 56px;
+		¨ background-size: auto;
 	}
 
 	/* Degradê do vídeo */
@@ -2133,6 +2140,7 @@ section {
 	/* Carrossel logos */
 	.carroselLogosBG {
 		height: 76px;
+		background-size: auto;
 	}
 
 	/* Degradê logos */
@@ -2179,12 +2187,12 @@ section {
 
 	/* Video BG */
 	.background-clip {
-		top: -150px;
+		top: -450px;
 		height: 400px;
 	}
 
 	.degradeVideo {
-		top: -150px;
+		top: -450px;
 		height: 400px;
 	}
 
