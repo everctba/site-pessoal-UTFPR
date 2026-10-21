@@ -856,6 +856,7 @@ section {
 	overflow: hidden;
 	width: 100%;
 	height: 600px;
+	border-radius: 22px;
 }
 
 .alignCenter {
