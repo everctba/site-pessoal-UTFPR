@@ -89,6 +89,8 @@ video {
 
 html {
 	scroll-behavior: smooth;
+	/* overflow-x: clip;
+	padding: 50px; */
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -170,6 +172,11 @@ table {
 	width: 802px;
 }
 
+.section-relative {
+	width: 100%;
+	overflow-x: visible;
+}
+
 h3 {
 
 	background-image: radial-gradient(60% 58% at 47% 61%, #05FEC0 30%, #05eae6f9 100%);
@@ -225,10 +232,13 @@ h3 {
 
 
 .conteudo {
-	width: 1040px;
+	width: 1326px;
+
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #16191D;
+	padding-left: 22px;
+	padding-right: 22px;
 }
 
 .flex {
@@ -256,6 +266,11 @@ h3 {
 	font-size: 500px;
 	position: absolute;
 	text-shadow: 2px -1px 0 #e1f7fe0f, -2px 1px 0 #a8f1b314;
+	/* overflow: hidden; */
+	width: 100%;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
 }
 
 .mover-para-cima:hover {
@@ -462,7 +477,7 @@ a {
 
 .imageCardsDribble {
 
-	width: 230px;
+	width: 100%;
 	border-radius: 24px;
 	margin-bottom: 22px;
 }
@@ -739,6 +754,7 @@ p {
 	gap: 12px;
 	transition: all 0.2s ease-out;
 	border-image: linear-gradient(to right, #06ffc1, #07f6f2) 1;
+	justify-content: center;
 }
 
 .botaoBehance:visited {
@@ -798,8 +814,11 @@ p {
 }
 
 .zIndexMenos1 {
-
+	width: 72%;
+	right: 0px;
+	position: absolute;
 	z-index: -1;
+	display: block;
 }
 
 .tituloSection {
@@ -856,7 +875,7 @@ section {
 	pointer-events: none;
 	background-blend-mode: hue;
 	top: -81px;
-	left: -109%;
+	left: -71%;
 	opacity: 0.45;
 	scale: 1.8;
 	mix-blend-mode: difference;
@@ -1442,7 +1461,7 @@ section {
 	flex-direction: row;
 	justify-content: center;
 	display: flex;
-
+	margin-bottom: 75px;
 
 }
 
@@ -1490,17 +1509,33 @@ section {
 	right: 0px;
 	top: -100px;
 	opacity: 0.5;
+	position: absolute;
+	opacity: 0.6;
+	top: -32px;
+	scale: 1;
+	width: 663px;
+	right: -304px;
+	/* overflow: hidden; */
+	right: -179px;
+
 }
 
+
 .paddingSections {
-	padding-top: 100px;
+	padding-top: 22px;
 	padding-bottom: 100px;
+	/* overflow: clip; */
 }
 
 .coladoNoCantoDribbble {
 	position: absolute;
-	top: -228px;
-	right: 0x;
+	opacity: 0.6;
+	top: -136px;
+	scale: 1;
+	width: 663px;
+	right: -304px;
+	right: -179px;
+
 }
 
 .coladoNoCantoBehance {
@@ -1509,6 +1544,14 @@ section {
 	/* left: -136px; */
 	width: 700px;
 	top: -61px;
+	position: absolute;
+	opacity: 0.6;
+	top: -96px;
+	scale: 1;
+	width: 663px;
+	right: -304px;
+	right: -179px;
+
 }
 
 .dribbbleButton {
@@ -1531,6 +1574,7 @@ section {
 	transition: all 0.2s ease-out;
 	border-radius: 8px;
 	color: white !important;
+	justify-content: center;
 }
 
 .dribbbleButtonIconeSize {
@@ -1546,6 +1590,7 @@ section {
 
 .wCardsDribbble {
 	width: 100%;
+	gap: 16px;
 	justify-content: space-between;
 }
 
@@ -1633,12 +1678,30 @@ section {
 /* ---------- TABLET (max-width: 1080px) ---------- */
 @media (max-width: 1080px) {
 
+	.degradeLogos {
+
+		margin-top: 22px;
+		margin-bottom: 32px;
+		height: 119px;
+
+	}
+
+	.zIndexMenos1 {
+		display: none;
+	}
+
+	.section-relative {
+		display: none;
+	}
+
 	/* Container principal */
 	.conteudo {
 		width: 100%;
 		padding-left: 24px;
 		padding-right: 24px;
 		box-sizing: border-box;
+		padding-left: 32px;
+		padding-right: 32px;
 	}
 
 	/* Menu */
@@ -1676,6 +1739,7 @@ section {
 	/* Texto descritivo */
 	.tamanhoTextoDescricao {
 		width: 100%;
+		padding-bottom: 40px;
 	}
 
 	/* Grids — reduzir colunas */
@@ -1689,13 +1753,16 @@ section {
 
 	/* Dribbble cards */
 	.wCardsDribbble {
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
+
 		gap: 16px;
 	}
 
 	.imageCardsDribble {
-		width: calc(50% - 8px);
+
+		width: 100%;
 	}
+
 
 	/* DJ Sets */
 	.boxBGDj {
@@ -1705,12 +1772,12 @@ section {
 
 	/* Sections padding */
 	.paddingSections {
-		padding-top: 72px;
-		padding-bottom: 72px;
+		padding-top: 32px;
+		padding-bottom: 32px;
 	}
 
 	.padding-extra {
-		padding-top: 140px !important;
+		padding-top: 58px !important;
 	}
 
 	/* Contato — Nokia */
@@ -1727,6 +1794,8 @@ section {
 	/* Texto grande de fundo "Creative" */
 	#Home {
 		font-size: 300px;
+		top: 40px;
+
 	}
 
 	/* Mapa */
@@ -1742,6 +1811,7 @@ section {
 	/* Titul interdegrade */
 	.tituloInterDegrade {
 		font-size: 32px;
+		text-align: center;
 	}
 }
 
@@ -1841,7 +1911,7 @@ section {
 
 	/* Dribbble cards — 2 por linha */
 	.imageCardsDribble {
-		width: calc(50% - 8px);
+		width: 100%;
 		margin-bottom: 0;
 	}
 
@@ -1965,6 +2035,7 @@ section {
 	.carroselLogosBG {
 		height: 56px;
 		¨ background-size: auto;
+		/* background-size: 248%; */
 	}
 
 	/* Degradê do vídeo */
@@ -1992,6 +2063,7 @@ section {
 	.conteudo {
 		padding-left: 16px;
 		padding-right: 16px;
+		/* overflow: clip; */
 	}
 
 	/* Menu — hambúrguer compacto */
@@ -2183,6 +2255,8 @@ section {
 		padding: 8px 14px;
 		font-size: 13px;
 		justify-content: center;
+		justify-content: center;
+
 
 	}
 
