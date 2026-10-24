@@ -239,8 +239,14 @@ h3 {
 	background-color: #16191D;
 	padding-left: 22px;
 	padding-right: 22px;
-
+	flex-direction: column;
+	/* position: relative; */
+	align-content: center;
+	align-items: center;
+	display: flex;
 }
+
+
 
 .conteudo::after {
 	content: "";
@@ -649,7 +655,18 @@ p {
 	background: linear-gradient(90deg, #17191c00, #17191f);
 }
 
+.letras {
 
+	width: 100%;
+	height: 653px;
+	background-image: url(img/letrastextura.png);
+	background-size: 90%;
+	background-repeat: repeat-x;
+	mix-blend-mode: color-dodge;
+	pointer-events: none;
+	position: absolute;
+	z-index: 249;
+}
 
 
 .praBaixoTitulo {
