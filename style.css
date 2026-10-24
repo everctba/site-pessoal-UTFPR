@@ -646,7 +646,7 @@ p {
 .carroselLogosBG::after {
 	top: -50px;
 	right: 0;
-	background: linear-gradient(90deg, #17191c00, #121418);
+	background: linear-gradient(90deg, #17191c00, #17191f);
 }
 
 
