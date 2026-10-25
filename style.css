@@ -312,7 +312,7 @@ h3 {
 	background-color: #002b4363;
 	padding: 16px 40px;
 	border-radius: 122px;
-	margin-top: 6px;
+	margin-top: 11px;
 	width: 100%;
 	position: fixed;
 	z-index: 55;
@@ -444,7 +444,7 @@ a {
 
 .heroFotoWrapper .tamanhoFotoPerfil {
 	position: relative;
-	z-index: 1;
+	z-index: 6;
 }
 
 @keyframes heroPulseExpand {
@@ -522,7 +522,7 @@ a {
 
 .wFull {
 	width: 100vw;
-	position: relative;
+	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -659,15 +659,59 @@ p {
 
 	width: 100%;
 	height: 653px;
-	background-image: url(img/letrastextura.png);
+	background-image: url(img/letrastextura3.webp);
 	background-size: 90%;
 	background-repeat: repeat-x;
-	mix-blend-mode: color-dodge;
+	/* mix-blend-mode: color-dodge; */
 	pointer-events: none;
 	position: absolute;
-	z-index: 249;
+	opacity: 0.5;
+	z-index: 5;
 }
 
+.letras::after {
+	/* content: "";
+	position: fixed;
+	inset: 0;
+
+	background-image: url("img/hero-blure.png");
+	background-size: 14%;
+	background-repeat: repeat;
+
+	opacity: 0.239;
+	mix-blend-mode: screen;
+	pointer-events: none;
+	z-index: 10000; */
+
+	transition: opacity 0.3s ease;
+}
+
+.degrademaster {
+	position: absolute;
+	inset: 0;
+	background-image: url(img/hero-blure.png);
+	background-size: 83%;
+	background-repeat: no-repeat;
+	opacity: 1;
+	right: -174px;
+	width: 100%;
+	display: flex;
+	/* backdrop-filter: blur(51px); */
+	height: 887px;
+	top: -332px;
+	mix-blend-mode: lighten;
+	filter: blur(97px);
+	transition: tra;
+	opacity: 0.8;
+	translate: 556px;
+	pointer-events: none;
+	z-index: 255;
+	transition: opacity 0.3s ease;
+	background-position: center center;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+}
 
 .praBaixoTitulo {
 	white-space: nowrap;
@@ -904,7 +948,7 @@ p {
 
 .opacity10 {
 	opacity: 0.2;
-	top: -74px;
+	top: -38px;
 }
 
 .bordaLeve {
@@ -994,11 +1038,11 @@ section {
 	background-size: cover;
 
 	/* background-position-x: 400px; */
-	height: 1px;
+	height: 3px;
 	/* width: 100%; */
 	/* margin-bottom: -12px; */
 	background-size: auto;
-
+	z-index: 88;
 
 
 }
