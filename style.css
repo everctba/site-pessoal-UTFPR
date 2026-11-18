@@ -332,6 +332,88 @@ h3 {
 	box-shadow: 21px 6px 15px 1px rgb(9 19 33 / 49%), -2px -1px 0px 1px rgb(80 172 167 / 18%);
 }
 
+
+*/---------- barra do menu ---------- */ .menuStyle {
+	box-sizing: border-box;
+	display: flex;
+	top: 11px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 55;
+
+	display: flex;
+	gap: 22px;
+	align-items: center;
+	justify-content: space-between;
+
+	width: calc(100% - 32px);
+	max-width: 1260px;
+	padding: 16px 40px;
+	margin: 0;
+	list-style: none;
+
+	border: 1px solid #67b59b0d;
+	border-radius: 122px;
+	background-color: #002b4363;
+	background-image: linear-gradient(164deg, #020e0f7d, #020e0f70);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	box-shadow: 21px 6px 15px 1px rgb(9 19 33 / 49%),
+		-2px -1px 0 1px rgb(80 172 167 / 18%);
+}
+
+
+.menuStyle a {
+	position: relative;
+	display: inline-block;
+	padding: 4px 0;
+	color: #05FEC0;
+	font-family: "Cascadia Code", monospace;
+	font-size: 16px;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+/* ---------- barrinha animada ---------- */
+.menuStyle a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -4px;
+	height: 2px;
+	border-radius: 2px;
+	background: #05FEC0;
+	transform: scaleX(0);
+	transform-origin: left;
+	/* cresce da esquerda */
+	transition: transform 0.25s ease;
+}
+
+.menuStyle a:hover,
+.menuStyle a:focus-visible,
+.menuStyle a.ativo {
+	color: #ffffff;
+}
+
+.menuStyle a:hover::after,
+.menuStyle a:focus-visible::after,
+.menuStyle a.ativo::after {
+	transform: scaleX(1);
+}
+
+/* foco visível para teclado */
+.menuStyle a:focus-visible {
+	outline: 2px solid #05FEC0;
+	outline-offset: 4px;
+	border-radius: 4px;
+}
+
+
+
+
+
+
 /* ---------- Menu hambúrguer ---------- */
 .navWrapper {
 	position: fixed;
@@ -1844,12 +1926,13 @@ section {
 
 
 
-	Menu */ .menuStyle {
+	*/ Menu */ .menuStyle {
 		max-width: calc(100% - 32px);
 		padding: 12px 24px;
 		gap: 14px;
 		font-size: small;
 	}
+
 
 	/* Títulos Hero */
 	.tituloDestaqueFonte {
