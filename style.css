@@ -1289,6 +1289,19 @@ section {
 	border-radius: 16px;
 }
 
+/* Flutuar suave e lento do Nokia (contato) */
+@keyframes nokiaFlutua {
+
+	0%,
+	100% {
+		transform: translateY(0) rotate(-1.1deg);
+	}
+
+	50% {
+		transform: translateY(-9px) rotate(1.1deg);
+	}
+}
+
 .tamanhoNokia {
 	width: 70%;
 	background-image: url("img/degrade-celular.png");
@@ -1296,6 +1309,14 @@ section {
 	background-size: 109%;
 	background-position-x: center;
 	background-position-y: center;
+	animation: nokiaFlutua 9s ease-in-out infinite;
+	will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.tamanhoNokia {
+		animation: none;
+	}
 }
 
 /* 
