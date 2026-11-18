@@ -1073,18 +1073,21 @@ section {
 	}
 }
 
-.background-clip {
+.bgVideoImagem {
 	position: absolute;
+	background-image: url("img/video-2.avif");
+	background-size: cover;
+	background-position: center;
 	/* left: 50%; */
 	top: -300px;
 	width: 100vw;
 	height: 700px;
-	object-fit: cover;
 	z-index: -2;
 	left: 50%;
 	opacity: 0.1;
 	transform: translateX(-50%);
 	mask: linear-gradient(to bottom, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+	-webkit-mask: linear-gradient(to bottom, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
 
 
 }
@@ -2400,8 +2403,8 @@ section {
 		height: 2px;
 	}
 
-	/* Video BG */
-	.background-clip {
+	/* Imagem BG */
+	.bgVideoImagem {
 		top: -450px;
 		height: 400px;
 	}
