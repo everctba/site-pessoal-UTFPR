@@ -297,9 +297,26 @@ h3 {
 	align-items: center;
 }
 
-.mover-para-cima:hover {
-	transform: translateY(-5px);
+/* Elevação leve ao passar o mouse (álbuns de música) */
+.mover-para-cima {
 	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mover-para-cima:hover {
+	transform: translateY(-4px);
+}
+
+/* Elevação leve ao passar o mouse (Dribbble, Hobbies e Fotografia) */
+.imageCardsDribble,
+.ilustracaoCarro,
+.miniFoto {
+	transition: transform 0.3s ease;
+}
+
+.imageCardsDribble:hover,
+.ilustracaoCarro:hover,
+.miniFoto:hover {
+	transform: translateY(-4px);
 }
 
 .menuStyle {
